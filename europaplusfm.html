@@ -16,7 +16,14 @@
     <ul>
     <video controls="" autoplay="" name="media"><source src="http://ep128.hostingradio.ru:8030/ep128" type="audio/mp3"></video>
           <a href='index.html' target='_blank'>Home</a> <br>
-        
+    <div id="record_span" style="display:none">
+    <hr>
+    <b>Audio recording: </b>
+    <button id="recbutton" onclick="record_click(); return false">start</button>
+    <span id="reccontrol"></span>
+    <br>
+    <div id="recwarning" style="width:300px; display:none; font-size:-1; color:red">Your browser does not seem to support downloading the recording; please try a recent version of Firefox, Chrome or Opera.</div>
+  </div>
     </ul>
 </body>
 </html>
