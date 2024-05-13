@@ -51,7 +51,7 @@ function record_stop()
    try {
       fname=(new Date().toISOString()).replace(/\.[0-9]{3}/,"");
    } catch (e) {};
-   fname="websdr_recording_"+fname+"_"+nominalfreq().toFixed(1)+"kHz.wav";
+   fname="smg4radio_recording_"+fname+"_"+nominalfreq().toFixed(1)+"radio.wav";
    document.getElementById('reccontrol').innerHTML="<a href='"+rec_downloadurl+"' download='"+fname+"'>download</a>";
 }
 
